@@ -1,0 +1,10 @@
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <ul class="nav navbar-nav navbar-right">
+        {% if session.logged_in %}
+            <li><a href="/logout">Logout</a></li>
+        {% else %}
+             <li><a href="/login">login</a></li>
+            <li><a href="/register">Register</a></li>
+        {% endif %}
+    </ul>
+</nav>
